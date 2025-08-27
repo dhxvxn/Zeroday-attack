@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Logs
+*.log
+trusted_users.log
+
+# Environment files
+.env
