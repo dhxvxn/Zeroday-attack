@@ -1,14 +1,29 @@
-# Honeypy - SSH & HTTP Honeypot
+# Honeypot Project
 
-Honeypy is a simple honeypot implementation that can simulate SSH and HTTP (WordPress) environments to capture attacker behavior.
+This project implements a **multi-functional honeypot** with:
+
+- **SSH honeypot** using Paramiko
+- **HTTP/Web honeypot** using Flask
+- Logging of suspicious activity and user interactions
+- Fake file system emulation for SSH honeypot
+- Trusted user session tracking for HTTP honeypot
+
+---
 
 ## Features
-- SSH Honeypot using Paramiko
-- HTTP Honeypot using Flask (Fake WordPress)
-- Configurable via `config.json` or CLI arguments
 
-## Installation
+- Detect suspicious usernames/passwords and IPs
+- Log commands and attempts to `logs/`
+- Emulated shell environment for SSH attackers
+- Web login trap with fake success messages
+- Configurable IPs, ports, and credentials
+
+---
+
+## Setup
+
+1. Clone the repository:
+
 ```bash
-git clone https://github.com/YOUR-USERNAME/honeypot-project.git
+git clone <your_repo_url>
 cd honeypot-project
-pip install -r requirements.txt
